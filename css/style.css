@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container--centre {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #fff3e7;
+}
+
+/* NAV components Section */
+
+.main--nave {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 1.0)
+      ),
+      url("../img/carousel-1.jpg");
+      background-size: cover;
+      background-position: center;
+    /* padding: 20px 0 20px 0; */
+    position: relative;
+    background-attachment: fixed;
+
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0; 
+    padding: 2rem 0;
+    /* padding: 5rem 0; */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1.0)); */
+    background: rgba(230, 229, 229, 0.8)
+}
+
+.nav--list  {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    color: #000000;
+    padding: 0 2.5rem;
+    transition: all 0.3s;
+}
+
+ul li a:hover {
+    color: #6e0000;
+}
+
+.nav--btn {
+    outline: none;
+    border: none;
+    border: 1px solid #6e0000;
+    background-color: #6e0000;
+    padding: 1rem 1rem;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.3s;
+    margin-right: 1rem;
+}
+
+.nav--btn:hover {
+    background-color: #d46666;
+    color: #000000;
+    cursor: pointer;
+}
+
+.btn--nav {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+}
+/* 
+.nav-icon--text {
+    font-size: 3rem;
+    color: #2c2c2c;
+    text-align: center;
+} */
+/* .nav---logo {
+    height: 15rem;
+    border-radius: 50%;
+    border: 2px solid #6e0000;
+    outline: none;
+} */
+
+.nav--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-text h1 {
+    font-size: 7rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-text p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ff8911;
+}
+
+/* Second Portion */
+
+header h2 {
+    font-size: 3rem;
+    margin: 10rem 0;
+    color: #a86666;
+}
+
+header {
+    border-bottom: 1px solid #d46666;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    overflow: hidden;
+}
+
+.detail img {
+    width: 40%;
+    border-radius: 1rem;
+    gap: 2rem;
+    transition: all 0.3s;
+}
+
+.detail img:hover {
+    transform: scale(1.1);
+}
+
+.header--text--para {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.header--text h3 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #a86666;
+}
+
+.promotion--icon {
+    font-size: 6.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Section 3 Services  */
+
+article {
+    border-bottom: 1px solid #a86666;
+    margin-bottom: 5rem;
+}
+
+.article--heading {
+    font-size: 3rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    color: #a86666;
+}
+
+.service--1 img {
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 5rem;
+}
+
+.service--main {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+}
+
+/* .service--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} */
+
+.services--para h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #a86666;
+    margin-bottom: 5rem;
+}
+
+.services--para p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.header--count {
+    margin-right: 1rem;
+    background-color: #6e0000;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+}
+
+/* Conact form  */
+
+.contact--main {
+    margin: 10rem;
+}
+
+.form--class {
+    width: 80%;
+    margin: 10rem auto;
+    height: 50rem;
+}
+
+.contact--text {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #a86666;
+    margin-bottom: 10rem 0;
+}
+
+.contact--form h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #a86666;
+}
+
+.contact--form {
+    width: 50%;
+}
+
+label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid #6e0000;
+  background-color: #fff3e7;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(22, 16, 16, 0.5);
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 2rem;
+    height: 4rem;
+    background-color: #6e0000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    border-radius: 9px;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #a86666;
+  }
+
+  /* Tapped Component */
+
+  .contact--main--active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(3, 3, 3, 0.9);
+    transition: all ease-in 0.5s;
+  }
+
+  .contact--main--active label {
+    color: #a86666;
+  }
+
+  .form--text--info {
+    color: #a86666;
+    font-size: 3rem;
+
+  }
+
+  .form--icon--close {
+    color: #fff;
+    position: absolute;
+    font-size: 5rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
